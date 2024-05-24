@@ -207,5 +207,6 @@ public class CustomerIntegrationTest {
 
         // Do the assertion
         assertThat(updatedCustomer).isEqualTo(expectedCustomer);
+
     }
 }
