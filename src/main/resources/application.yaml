@@ -12,16 +12,15 @@ spring:
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 2
-      idle-timeout: 600000  # 10 minutes
-      max-lifetime: 1800000  # 30 minutes
-      connection-timeout: 30000  # 30 seconds
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      connection-timeout: 30000
   jpa:
     hibernate:
       ddl-auto: validate
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
-    show-sql: true
+    show-sql: false
   main:
     web-application-type: servlet
